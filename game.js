@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function getYesNoAnswer(question) {
-        const apiKey = await getApiKey();  // Get the API key from the Netlify function | process.env.OPEN_AI_KEY;
+        const apiKey = process.env.OPEN_AI_KEY // await getApiKey();  // Get the API key from the Netlify function | process.env.OPEN_AI_KEY;
 
         if (!apiKey) {
             console.error('API key is missing!');
