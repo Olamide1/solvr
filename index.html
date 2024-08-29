@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvr - The Critical Thinking Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .title, .subtitle {
+            color: #333;
+        }
+        .button {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .notification {
+            border-radius: 8px;
+        }
+        #start-screen, #question-phase, #end-screen {
+            padding: 15px;
+        }
+        .hidden {
+            display: none;
+        }
+        .question-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            display: none; /* Initially hidden */
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #timer-display {
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+        }
+        [data-tooltip] {
+            position: relative;
+            cursor: pointer;
+        }
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: -5px;
+            left: 105%;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 100;
+        }
+        #end-screen .button {
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .box {
+                padding: 15px;
+            }
+            .title {
+                font-size: 1.5em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            #question-list {
+                max-height: 150px;
+            }
+            #timer-display {
+                font-size: 1.2em;
+            }
+            .button {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.2em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            .button {
+                font-size: 0.9em;
+            }
+            #question-list {
+                max-height: 120px;
+            }
+            .box {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section" aria-labelledby="game-title">
+        <div class="container">
+
+            <!-- Start Screen -->
+            <div id="start-screen" class="box" role="main" aria-labelledby="game-title">
+                <h1 id="game-title" class="title has-text-centered">Solvr - The Critical Thinking Game</h1>
+                <p class="subtitle has-text-centered">The goal of this game is to help you develop critical thinking skills across a broad range of topics.</p>
+                
+                <h2 class="title is-4">How to Play:</h2>
+                <ul class="content">
+                    <li><strong>Step 1:</strong> You will be given a category and a hint to guess an answer.</li>
+                    <li><strong>Step 2:</strong> Based on the hint, you can ask Yes/No questions to help guess the right answer.</li>
+                    <li><strong>Step 3:</strong> Keep asking questions until you feel confident about the answer. Remember, you can only ask questions that can be answered with "Yes" or "No".</li>
+                    <li><strong>Step 4:</strong> Once you're ready, type in your guess and submit it. If you're correct, you'll move on to the next level.</li>
+                    <li><strong>Step 5:</strong> Your score is based on the number of questions you asked before guessing correctly. Fewer questions mean a higher score!</li>
+                    <li><strong>Step 6:</strong> If you get stuck, you can request a hint, but be careful — it will cost you points!</li>
+                </ul>
+
+                <!-- Difficulty Level Selection -->
+                <h2 class="title is-4 mt-4">Select Difficulty:</h2>
+                <div class="select is-fullwidth mb-4">
+                    <label for="difficulty-select" class="sr-only">Difficulty Level</label>
+                    <select id="difficulty-select" aria-label="Select difficulty level">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                
+                <button id="start-btn" class="button is-primary mt-4" aria-label="Start game">Start Game</button>
+            </div>
+
+            <!-- Question Phase -->
+            <div id="question-phase" class="box hidden" role="main">
+                <h2 class="title" aria-labelledby="ask-question-title">Ask a Yes/No Question:</h2>
+
+                <!-- Category Display -->
+                <div id="category-display" class="notification is-primary mt-2" aria-live="polite"></div>
+
+                <!-- Context Hint -->
+                <div id="context-hint" class="notification is-info hidden mt-2" aria-live="polite"></div>
+
+                <!-- Timer Display -->
+                <div id="timer-display" class="notification is-danger is-light mt-2 hidden" aria-live="polite"></div>
+
+                <!-- Question Input -->
+                <label for="question-input" class="sr-only">Your Question</label>
+                <input id="question-input" class="input" type="text" placeholder="Type your question here" data-tooltip="Ask a Yes/No question to narrow down the answer">
+                <button id="submit-question-btn" class="button is-link mt-2" data-tooltip="Submit your question" aria-label="Submit question">Submit Question</button>
+
+                <!-- Question Response -->
+                <div id="question-response" class="notification is-info hidden mt-2" aria-live="polite"></div>
+
+                <!-- Loading Spinner -->
+                <div id="loading-spinner" class="spinner" role="status" aria-live="polite">
+                    <span class="sr-only"></span>
+                </div>
+
+                <!-- Questions Asked List -->
+                <h3 class="title mt-4">Questions Asked:</h3>
+                <ul id="question-list" class="question-list box" aria-labelledby="questions-asked-title"></ul>
+
+                <!-- Guess Input -->
+                <label for="guess-input" class="sr-only">Your Guess</label>
+                <h3 class="title mt-4">Make a Guess:</h3>
+                <input id="guess-input" class="input" type="text" placeholder="Your guess here" data-tooltip="Make your guess here">
+                <button id="submit-guess-btn" class="button is-success mt-2" data-tooltip="Submit your guess" aria-label="Submit guess">Submit Guess</button>
+
+                <!-- Guess Response -->
+                <div id="guess-response" class="notification is-warning hidden mt-2" aria-live="polite"></div>
+
+                <!-- Request Hint Button -->
+                <button id="request-hint-btn" class="button is-info mt-4" data-tooltip="Request a hint (penalty on score)" aria-label="Request hint">Request Hint</button>
+            </div>
+
+            <!-- End Screen -->
+            <div id="end-screen" class="box hidden" role="main">
+                <h2 id="end-message" class="title has-text-centered" aria-live="polite"></h2>
+                <p id="score-message" class="subtitle has-text-centered" aria-live="polite"></p>
+                <div id="result-container" class="content" aria-live="polite"></div>
+                <button id="next-level-btn" class="button is-primary mt-4" aria-label="Continue to Next Level">Continue to Next Level</button>
+                <button id="restart-btn" class="button is-link mt-4" aria-label="Play again">Play Again</button>
+                <button id="share-btn" class="button is-info mt-4" aria-label="Share your score">Share your Score</button> <!-- Updated Share Button -->
+
+                <!-- Leaderboard Display -->
+                <div id="leaderboard-display" class="box mt-4 hidden" aria-live="polite"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <!-- External Leaderboard and PeerJS SDKs -->
+    <script src="https://cdn.jsdelivr.net/npm/leaderboard-api-sdk"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+
+    <!-- Game Script -->
+    <script src="game.js"></script>
+</body>
+</html>

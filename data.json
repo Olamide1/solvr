@@ -1,0 +1,473 @@
+{
+    "categories": [
+        {
+            "category": "Product Management",
+            "levels": [
+                {
+                    "answer": "Product Roadmap",
+                    "synonyms": ["Roadmap", "Product Plan"],
+                    "hints": ["It's a strategic planning document.", "It aligns teams around product goals.", "It's vital for product management."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "User Authentication",
+                    "synonyms": ["Authentication", "Auth", "user verification"],
+                    "hints": ["It's a process to verify identity.", "It protects user accounts.", "It's found in every secure application."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Feature Prioritization",
+                    "synonyms": ["Prioritization", "Feature Selection"],
+                    "hints": ["It decides what to build first.", "It manages limited resources.", "It's crucial in product development."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Agile Methodology",
+                    "synonyms": ["Agile", "Scrum"],
+                    "hints": ["It's a flexible project management framework.", "It involves iterative development.", "It emphasizes collaboration and quick feedback."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "User Personas",
+                    "synonyms": ["Personas", "User Profiles" , "user persona", "persona"],
+                    "hints": ["These are fictional characters representing user types.", "They guide design decisions.", "They're based on research."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Minimum Viable Product",
+                    "synonyms": ["MVP"],
+                    "hints": ["It's the simplest version of a product.", "It helps validate a product idea.", "It's used to gather early feedback."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Stakeholder Management",
+                    "synonyms": ["Stakeholder Communication"],
+                    "hints": ["It's about managing expectations.", "It involves negotiation and communication.", "It's critical for project success."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Market Research",
+                    "synonyms": ["Research", "Market Analysis"],
+                    "hints": ["It gathers information about customer needs.", "It informs product strategy.", "It's a foundation for decision-making."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Competitor Analysis",
+                    "synonyms": ["Competitive Analysis", "Market Analysis"],
+                    "hints": ["It studies competitors' strengths and weaknesses.", "It helps position your product.", "It's essential for strategic planning."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Customer Journey Mapping",
+                    "synonyms": ["Journey Mapping", "User Journey", "Customer journey"],
+                    "hints": ["It's a visual representation of user experience.", "It tracks touchpoints with the product.", "It helps improve user satisfaction."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "A/B Testing",
+                    "synonyms": ["Split Testing"],
+                    "hints": ["It's a method to compare two variations.", "It helps optimize user experience.", "It's widely used in product development."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Product Backlog",
+                    "synonyms": ["Backlog", "Agile Backlog"],
+                    "hints": ["It's a prioritized list of tasks.", "It includes features, bugs, and enhancements.", "It's central to Agile frameworks."],
+                    "difficulty": "medium"
+                }
+            ]
+        },
+        {
+            "category": "Technology",
+            "levels": [
+                {
+                    "answer": "Artificial Intelligence",
+                    "synonyms": ["AI"],
+                    "hints": ["It mimics human intelligence.", "It's used in various fields like healthcare and finance.", "It's based on algorithms and data."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Blockchain",
+                    "synonyms": ["Distributed Ledger"],
+                    "hints": ["It's a decentralized record-keeping system.", "It powers cryptocurrencies like Bitcoin.", "It's used for secure and transparent transactions."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Cloud Computing",
+                    "synonyms": ["Cloud"],
+                    "hints": ["It delivers computing services over the internet.", "It offers scalable IT resources.", "It's used for storage, databases, and networking."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Internet of Things",
+                    "synonyms": ["IoT"],
+                    "hints": ["It connects physical devices to the internet.", "It enables smart homes and cities.", "It allows devices to communicate and share data."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Cybersecurity",
+                    "synonyms": ["Information Security", "Infosec"],
+                    "hints": ["It protects data and systems from cyber threats.", "It includes practices like encryption and firewalls.", "It's crucial for protecting privacy."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Virtual Reality",
+                    "synonyms": ["VR"],
+                    "hints": ["It creates immersive digital environments.", "It's used in gaming, education, and training.", "It requires special headsets to experience."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Augmented Reality",
+                    "synonyms": ["AR"],
+                    "hints": ["It overlays digital content on the real world.", "It enhances reality with interactive experiences.", "It's used in apps like Pokemon Go."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Big Data",
+                    "synonyms": ["Data Analytics"],
+                    "hints": ["It involves processing large volumes of data.", "It helps make informed business decisions.", "It requires specialized tools for analysis."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "5G Technology",
+                    "synonyms": ["5G"],
+                    "hints": ["It's the latest generation of mobile networks.", "It offers faster speeds and lower latency.", "It's essential for the future of IoT."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Quantum Computing",
+                    "synonyms": ["Quantum"],
+                    "hints": ["It uses quantum bits for computation.", "It's capable of solving complex problems quickly.", "It's still in the experimental phase."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Robotics",
+                    "synonyms": ["Automation"],
+                    "hints": ["It involves building and programming robots.", "It's used in industries like manufacturing and healthcare.", "It automates tasks and improves efficiency."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Autonomous Vehicles",
+                    "synonyms": ["Self-Driving Cars"],
+                    "hints": ["They drive themselves using sensors and AI.", "They're being developed by companies like Tesla.", "They're considered the future of transportation."],
+                    "difficulty": "medium"
+                }
+            ]
+        },
+        {
+            "category": "Science",
+            "levels": [
+                {
+                    "answer": "Photosynthesis",
+                    "synonyms": ["Plant Respiration"],
+                    "hints": ["It's a process used by plants to create energy.", "It converts sunlight into chemical energy.", "It's vital for plant growth and oxygen production."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Gravity",
+                    "synonyms": ["Gravitational Force"],
+                    "hints": ["It's a force that attracts objects towards the Earth.", "It's responsible for the planets orbiting the sun.", "It was famously described by Isaac Newton."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Evolution",
+                    "synonyms": ["Natural Selection"],
+                    "hints": ["It's a process of change in species over time.", "It explains how organisms adapt to their environment.", "It was extensively studied by Charles Darwin."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Relativity",
+                    "synonyms": ["Theory of Relativity"],
+                    "hints": ["It's a theory by Einstein.", "It describes the relationship between space and time.", "It introduced the equation E=mc²."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "DNA",
+                    "synonyms": ["Deoxyribonucleic Acid"],
+                    "hints": ["It's the molecule that carries genetic information.", "It determines the characteristics of living organisms.", "It's structured as a double helix."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Climate Change",
+                    "synonyms": ["Global Warming"],
+                    "hints": ["It's a long-term change in the Earth's climate.", "It's largely driven by human activities.", "It leads to rising global temperatures."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Plate Tectonics",
+                    "synonyms": ["Tectonic Plates"],
+                    "hints": ["It describes the movement of Earth's lithospheric plates.", "It causes earthquakes and volcanic activity.", "It explains the formation of mountains."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Black Holes",
+                    "synonyms": ["Singularity"],
+                    "hints": ["It's a region in space with intense gravity.", "Nothing, not even light, can escape from it.", "It was predicted by Einstein's theory of relativity."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Big Bang",
+                    "synonyms": ["Cosmic Expansion"],
+                    "hints": ["It's the theory of the universe's origin.", "It suggests the universe began from a single point.", "It happened around 13.8 billion years ago."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Quantum Mechanics",
+                    "synonyms": ["Quantum Physics"],
+                    "hints": ["It's a fundamental theory in physics.", "It explains the behavior of particles on a small scale.", "It involves concepts like superposition and entanglement."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Genetic Engineering",
+                    "synonyms": ["Genetic Modification", "GMO"],
+                    "hints": ["It involves altering the DNA of organisms.", "It's used to create genetically modified organisms.", "It's applied in agriculture and medicine."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Nuclear Fission",
+                    "synonyms": ["Atomic Fission"],
+                    "hints": ["It's a process of splitting atomic nuclei.", "It releases a large amount of energy.", "It's used in nuclear power plants."],
+                    "difficulty": "hard"
+                }
+            ]
+        },
+        {
+            "category": "History",
+            "levels": [
+                {
+                    "answer": "Industrial Revolution",
+                    "synonyms": ["Industrialization"],
+                    "hints": ["It was a period of rapid industrial growth.", "It began in the 18th century.", "It led to the rise of factories and mass production."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "World War II",
+                    "synonyms": ["WWII", "Second World War", "WW2", "World war 2"],
+                    "hints": ["It was a global conflict involving many nations.", "It took place between 1939 and 1945.", "It resulted in significant geopolitical changes."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Renaissance",
+                    "synonyms": ["Renaissance Period"],
+                    "hints": ["It was a cultural movement that began in Europe.", "It focused on the revival of classical learning.", "It spanned the 14th to 17th centuries."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "The French Revolution",
+                    "synonyms": ["French Revolution"],
+                    "hints": ["It was a period of social and political upheaval in France.", "It began in 1789 and led to the rise of Napoleon.", "It significantly altered the course of French history."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The American Civil War",
+                    "synonyms": ["Civil War", "War Between the States"],
+                    "hints": ["It was fought between the Union and the Confederacy.", "It took place from 1861 to 1865.", "It resulted in the abolition of slavery."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Cold War",
+                    "synonyms": ["Cold War Era"],
+                    "hints": ["It was a period of tension between the USA and USSR.", "It lasted from 1947 to 1991.", "It did not involve direct military conflict."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "The Fall of the Berlin Wall",
+                    "synonyms": ["Berlin Wall Collapse"],
+                    "hints": ["It marked the end of the Cold War.", "It occurred in 1989.", "It led to the reunification of Germany."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Great Depression",
+                    "synonyms": ["Economic Depression"],
+                    "hints": ["It was a severe worldwide economic depression.", "It started in 1929 with the stock market crash.", "It led to widespread unemployment and poverty."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "The Space Race",
+                    "synonyms": ["Space Competition"],
+                    "hints": ["It was a competition between the USA and the USSR.", "It took place during the Cold War.", "It led to significant advancements in space exploration."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Magna Carta",
+                    "synonyms": ["Magna Carta"],
+                    "hints": ["It was a charter of rights.", "It was signed by King John of England in 1215.", "It's considered a cornerstone of modern democracy."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "The Crusades",
+                    "synonyms": ["Religious Wars"],
+                    "hints": ["They were religious wars fought in the Middle Ages.", "They were primarily fought in the Holy Land.", "They occurred between the 11th and 13th centuries."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "The American Revolution",
+                    "synonyms": ["Revolutionary War"],
+                    "hints": ["It was a war for independence from Britain.", "It occurred in the late 18th century.", "It led to the founding of the United States."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Ottoman Empire",
+                    "synonyms": ["Ottoman Empire"],
+                    "hints": ["It was a vast empire that lasted for centuries.", "It was centered in modern-day Turkey.", "It spanned from the 14th to the early 20th century."],
+                    "difficulty": "hard"
+                }
+            ]
+        },
+        {
+            "category": "General Knowledge",
+            "levels": [
+                {
+                    "answer": "Democracy",
+                    "synonyms": ["Democratic Government"],
+                    "hints": ["It's a system of government where the people rule.", "It involves elected representatives.", "It's based on majority rule."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Renewable Energy",
+                    "synonyms": ["Green Energy", "Energy"],
+                    "hints": ["It comes from natural sources.", "It's sustainable and replenishable.", "It includes solar and wind energy."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Human Rights",
+                    "synonyms": ["Universal Rights", "Basic human rights"],
+                    "hints": ["They are basic rights inherent to all human beings.", "They include freedom and equality.", "They are protected by international law."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Globalization",
+                    "synonyms": ["Global Integration"],
+                    "hints": ["It's the process of increased interconnectedness.", "It involves trade, communication, and cultural exchange.", "It has both positive and negative impacts."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Artificial Intelligence",
+                    "synonyms": ["AI"],
+                    "hints": ["It simulates human intelligence in machines.", "It's used in various fields like healthcare and finance.", "It involves learning and problem-solving algorithms."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Climate Change",
+                    "synonyms": ["Global Warming"],
+                    "hints": ["It's a significant change in global climate patterns.", "It's mainly caused by human activities.", "It leads to rising sea levels and extreme weather."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Cryptocurrency",
+                    "synonyms": ["Digital Currency"],
+                    "hints": ["It's a form of digital or virtual money.", "It's decentralized and based on blockchain technology.", "Bitcoin is the most well-known cryptocurrency."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Nutrition",
+                    "synonyms": ["Diet", "Healthy Eating"],
+                    "hints": ["It involves the intake of food necessary for health.", "It provides energy and nutrients to the body.", "It's essential for growth and maintenance of the body."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Vaccination",
+                    "synonyms": ["Immunization"],
+                    "hints": ["It's a method of preventing diseases.", "It involves the administration of vaccines.", "It helps build immunity against infections."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The United Nations",
+                    "synonyms": ["UN", "The UN"],
+                    "hints": ["It's an international organization founded in 1945.", "It aims to promote peace and security worldwide.", "It involves nearly every nation in the world."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Recycling",
+                    "synonyms": ["Waste Processing"],
+                    "hints": ["It involves converting waste materials into reusable materials.", "It helps reduce waste and conserve resources.", "It's a key component of environmental conservation."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "The Internet",
+                    "synonyms": ["World Wide Web", "Net", "www", "internet"],
+                    "hints": ["It's a global network of computers.", "It allows for communication and access to information.", "It's used for entertainment, work, and education."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Economics",
+                    "synonyms": ["Economic Science"],
+                    "hints": ["It's the study of how societies use resources.", "It involves concepts like supply and demand.", "It influences business decisions and government policies."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "The Solar System",
+                    "synonyms": ["Solar System"],
+                    "hints": ["It's a collection of planets orbiting the sun.", "It includes Earth, Mars, and Jupiter.", "It is part of the Milky Way galaxy."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "The Human Brain",
+                    "synonyms": ["Brain", "Cerebrum"],
+                    "hints": ["It's the control center of the nervous system.", "It's responsible for thought and memory.", "It's protected by the skull."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Photosynthesis",
+                    "synonyms": ["Plant Respiration"],
+                    "hints": ["It's the process by which plants create food.", "It requires sunlight, water, and carbon dioxide.", "It produces oxygen as a byproduct."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "World Health Organization",
+                    "synonyms": ["WHO"],
+                    "hints": ["It's an international organization.", "It focuses on global public health.", "It was established by the United Nations."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "The Eiffel Tower",
+                    "synonyms": ["Eiffel Tower", "Tour Eiffel"],
+                    "hints": ["It's a famous landmark in Paris.", "It was built by Gustave Eiffel.", "It's made of iron."],
+                    "difficulty": "easy"
+                }
+            ]
+        },
+        {
+            "category": "Sports",
+            "levels": [
+                {
+                    "answer": "Soccer",
+                    "synonyms": ["Football", "Futbol"],
+                    "hints": ["It's the world's most popular sport.", "It's played with a round ball.", "The objective is to score goals."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "The Olympics",
+                    "synonyms": ["Olympic Games"],
+                    "hints": ["It's an international sports event.", "It occurs every four years.", "It includes summer and winter games."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Basketball",
+                    "synonyms": ["Hoops", "Bball"],
+                    "hints": ["It's played with a round orange ball.", "Teams score by shooting the ball into a hoop.", "It's popular in the United States."],
+                    "difficulty": "easy"
+                },
+                {
+                    "answer": "Marathon",
+                    "synonyms": ["Long-Distance Running", "26.2 Miles", "long distance running"],
+                    "hints": ["It's a long-distance running race.", "It covers a distance of 26.2 miles.", "It originates from ancient Greece."],
+                    "difficulty": "medium"
+                },
+                {
+                    "answer": "Cricket",
+                    "synonyms": ["Bat-and-Ball Game"],
+                    "hints": ["It's a bat-and-ball game played on a field.", "It's extremely popular in countries like India and England.", "Teams score runs by hitting the ball."],
+                    "difficulty": "hard"
+                },
+                {
+                    "answer": "Tennis",
+                    "synonyms": ["Lawn Tennis"],
+                    "hints": ["It's played with a racket and a small yellow ball.", "The objective is to hit the ball over the net.", "It can be played in singles or doubles."],
+                    "difficulty": "medium"
+                }
+            ]
+        }
+        
+    ]
+}
